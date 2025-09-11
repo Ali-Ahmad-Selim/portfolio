@@ -4,13 +4,15 @@ import Services from './comonents/Services'
 import Footer from './comonents/Footer'
 import Head from './comonents/Head'
 import Previous from './comonents/Previous'
+import Hero from './comonents/Hero'
 
 const Page = () => {
   return (
-    <div>
+    <div >
       <Head />
-      <Previous />
+      <Hero />
       <Features />
+      <Previous />
       <Services />
       <Footer />
     </div>
