@@ -56,7 +56,7 @@ const Hero = () => {
 
             {/* Image placeholder with gradient overlay */}
             <div className="relative z-10 w-64 h-64 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden">
-              <span className="text-gray-500 font-medium">Image Here</span>
+              <span className="text-gray-500 font-medium"> </span>
             </div>
           </div>
         </div>

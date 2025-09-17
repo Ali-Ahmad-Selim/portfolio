@@ -11,28 +11,28 @@ const Features = () => {
   ];
 
   return (
-    <div className='w-full bg-[#1c2837] py-10 px-6'>
-      <div className='grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 
-                      items-center justify-items-center max-w-5xl mx-auto'>
+    <div className='w-full bg-[#17212f] py-16 px-6'>
+      {/* Decorative Line with Dot and Circle */}
+    
+
+      {/* Technologies Grid */}
+      <div className='grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-8 
+                    items-center justify-items-center max-w-5xl mx-auto'>
         {technologies.map((tech) => (
           <div 
             key={tech.id} 
-            className='transform hover:scale-110 transition-all duration-500 
-                      hover:rotate-[360deg] group
-                      bg-[#1c2837]/50 backdrop-blur-sm
-                      shadow-[0_0_10px] shadow-white/40 
-                      hover:shadow-[0_0_20px] hover:shadow-vibe
-                      p-3 sm:p-4 rounded-lg hover:rounded-full
-                      cursor-pointer'
-            style={{
-              animation: `bounce 3s infinite ${Math.random() * 2}s ease-in-out`
-            }}
+            className='group p-4 rounded-lg
+                     transition-all duration-500
+                     shadow-[0_0_15px_rgba(238,111,87,0.15)]
+                     hover:shadow-[0_0_20px_rgba(238,111,87,0.25)]'
           >
             <img 
               src={tech.url} 
               alt={tech.id} 
-              className='w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14
-                         opacity-70 group-hover:opacity-100 transition-opacity duration-300' 
+              className='w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
+                       opacity-80 group-hover:opacity-100 
+                       transition-all duration-500
+                       transform group-hover:scale-110' 
             />
           </div>
         ))}
