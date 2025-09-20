@@ -28,13 +28,18 @@ const Hero = () => {
             </div>
 
             {/* Buttons */}
-            <div className='flex gap-4 pt-8'>
+           <div className='flex gap-4 pt-8'>
               <button className='cursor-pointer px-6 py-2 bg-casual border-2 border-casual text-white rounded-md transition-colors duration-300 hover:bg-vibe'>
                 Contact Me
               </button>
-              <button className='cursor-pointer px-6 py-2 bg-vibe border-2 border-casual text-white rounded-md transition-colors duration-300 hover:bg-casual'>
+              <a 
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className='cursor-pointer px-6 py-2 bg-vibe border-2 border-casual text-white rounded-md transition-colors duration-300 hover:bg-casual'
+              >
                 My Resume
-              </button>
+              </a>
             </div>
           </div>
 
@@ -56,7 +61,13 @@ const Hero = () => {
 
             {/* Image placeholder with gradient overlay */}
             <div className="relative z-10 w-64 h-64 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden">
-              <span className="text-gray-500 font-medium"> </span>
+                 <div className="relative z-10 w-64 h-64 rounded-full overflow-hidden">
+              <img 
+                src="/ali ahmad.jpg" 
+                alt="Ali Ahmad"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
             </div>
           </div>
         </div>

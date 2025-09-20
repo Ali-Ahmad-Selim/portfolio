@@ -30,16 +30,16 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           {/* Copyright Text */}
           <div className="text-gray-300 text-sm">
-            © {new Date().getFullYear()} Ali Hamza. All rights reserved.
+            © {new Date().getFullYear()} Ali Ahmad. All rights reserved.
           </div>
 
           {/* Social Links */}
           <div className="flex gap-6">
             <a 
-              href="https://github.com/YourGithubUsername" 
+              href="https://github.com/Ali-Ahmad-Selim" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-casual transition-colors duration-300"
+              className="text-gray-300 hover:text-black transition-colors duration-300 "
               aria-label="GitHub"
             >
               <FaGithub className="w-6 h-6" />
@@ -48,7 +48,7 @@ const Footer = () => {
               href="https://linkedin.com/in/YourLinkedinUsername" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-casual transition-colors duration-300"
+              className="text-gray-300 hover:text-blue-500 transition-colors duration-300"
               aria-label="LinkedIn"
             >
               <FaLinkedin className="w-6 h-6" />
@@ -57,7 +57,7 @@ const Footer = () => {
               href="https://wa.me/923245119133" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-casual transition-colors duration-300"
+              className="text-gray-300 hover:text-green-600 transition-colors duration-300"
               aria-label="WhatsApp"
             >
               <FaWhatsapp className="w-6 h-6" />
